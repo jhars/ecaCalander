@@ -1,0 +1,39 @@
+<!-- <p>Animations:<br>
+  <select id="anim">
+    <option value="show">Show (default)</option>
+    <option value="slideDown">Slide down</option>
+    <option value="fadeIn">Fade in</option>
+    <option value="blind">Blind (UI Effect)</option>
+    <option value="bounce">Bounce (UI Effect)</option>
+    <option value="clip">Clip (UI Effect)</option>
+    <option value="drop">Drop (UI Effect)</option>
+    <option value="fold">Fold (UI Effect)</option>
+    <option value="slide">Slide (UI Effect)</option>
+    <option value="">None</option>
+  </select>
+</p>
+
+<br><hr>
+
+<form>
+	<div>
+		Date: <input type="text" class="datepicker" size="30"> Date: <input type="text" class="datepicker" size="30">
+	</div>
+</form>
+
+
+
+<script>
+$( function() {
+  $( ".datepicker" ).datepicker();
+  $( "#anim" ).on( "change", function() {
+    $( ".datepicker" ).datepicker( "option", "showAnim", $( this ).val() );
+  });
+} );
+
+</script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
